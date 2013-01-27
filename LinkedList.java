@@ -5,6 +5,19 @@ public class LinkedList<T>
     private Node<T> back;
     private int size;
 
+    private static class Node<T>
+    {
+        public T data;
+        public Node<T> next;
+        public Node<T> prev;
+
+        public Node(T data) {
+            this.data = data;
+            next = null;
+            prev = null;
+        }
+    }
+
     public LinkedList()
     {
         front = null;
@@ -148,18 +161,5 @@ public class LinkedList<T>
             return null;
         }
 
-    }
-}
-
-class Node<T>
-{
-    public T data;
-    public Node<T> next;
-    public Node<T> prev;
-
-    public Node(T data) {
-        this.data = data;
-        next = null;
-        prev = null;
     }
 }
