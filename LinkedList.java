@@ -148,7 +148,7 @@ public class LinkedList<T>
             Node<T> ret = ptr.next;
             ptr.next = ptr.prev = null;
             return ret;
-        } else if(ptr == front && ptr == back) {
+        } else if(size == 0) {
             clear();
             return null;
         } else if (ptr == front) {
