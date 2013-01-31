@@ -31,7 +31,7 @@ public class IntNode {
         return front;
     }
 
-    public static void deleteEveryOther(IntNode front) {
+    public static void deleteEveryOther(final IntNode front) {
 
         if (front == null || front.next == null)
             return;
@@ -52,7 +52,7 @@ public class IntNode {
         }
     }
 
-    public static IntNode commonElements(IntNode frontL1, IntNode frontL2) {
+    public static IntNode commonElements(final IntNode frontL1, final IntNode frontL2) {
 
         IntNode ptr1 = frontL1;
         IntNode ptr2 = frontL2;
