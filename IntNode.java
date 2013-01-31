@@ -12,7 +12,7 @@ public class IntNode {
     }
 
 
-    public static IntNode addBefore(IntNode front, int target, int newItem) {
+    public static IntNode addBefore(final IntNode front, final int target, final int newItem) {
 
         IntNode ptr = new IntNode(target, front);
 
