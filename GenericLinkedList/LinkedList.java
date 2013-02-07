@@ -48,6 +48,18 @@ public class LinkedList<T>
         }
     }
 
+    public T removeFront()
+    {
+        if (front == null)
+            return null;
+        T temp = front.data;
+        front.next.prev = null;
+        front = front.next;
+        return temp;
+    }
+
+
+
     public boolean insertLast(T data)
     {
         if (back == null) {
