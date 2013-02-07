@@ -135,7 +135,6 @@ public class LinkedList<T>
 
     public int size()
     {
-        //TODO::code this
         return size;
     }
 
