@@ -76,10 +76,14 @@ public class LinkedList
               if (prev == ptr) {
                   rear = null;
                   return;
+              } else if(ptr == rear) {
+                  prev.next = ptr.next;
+                  rear = prev;
+                  return;
               } else {
-                prev.next = ptr.next;
-                return;
-              }
+                  prev.next = ptr.next;
+                  return;
+
 
           }
           prev = ptr;
@@ -87,6 +91,6 @@ public class LinkedList
         } while (prev != rear);
 
         throw new NoSuchElementException(target);
-          
-     } 
+
+     }
 }

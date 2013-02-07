@@ -11,7 +11,9 @@ public class LinkedListTest
 			System.out.println();
 			System.out.println("deleteTest: PASS");
 		}
+
 		list.addAfter("c", "a");
+        list.delete("c");
 		list.addAfter("b", "a");
 		try {
 			list.addAfter("e", "f");
