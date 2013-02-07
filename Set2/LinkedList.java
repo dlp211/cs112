@@ -83,6 +83,7 @@ public class LinkedList
               } else {
                   prev.next = ptr.next;
                   return;
+              }
 
 
           }
