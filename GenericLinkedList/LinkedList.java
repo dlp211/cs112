@@ -138,6 +138,11 @@ public class LinkedList<T>
         return size;
     }
 
+    public boolean isEmpty()
+    {
+        return size == 0;
+    }
+
     private Node<T> removePtr(Node<T> ptr)
     {
         --size;
