@@ -49,5 +49,6 @@ public class DLLNode {
             ptr = ptr.next;
          }
 
+         System.out.println();
       }
 }
